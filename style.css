@@ -1,0 +1,560 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    /* overflow: hidden; */
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.main-screen {
+    display: flex;
+    flex-wrap: wrap;
+    /* min-width: 100%; */
+    /* border: 1px dashed green; */
+}
+
+.browser-window {
+    /* border: 1px dashed red; */
+    flex: 1;
+    /* min-width: 50%; */
+    min-width: 400px;
+}
+
+.clicker-window {
+    /* border: 1px dashed red; */
+    flex: 1;
+    /* min-width: 50%; */
+    min-width: 400px;
+}
+
+.money-tablets-bg {
+    background-color: #6dd99e;
+    /* height: 260px; */
+    max-height: 40%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 40px;
+}
+
+.money-account-frame {
+    display: block;
+    background-color: #313131;
+    border-radius: 25px;
+    height: 130px;
+    /* width: 920px; */
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card-inteface {
+    display: flex;
+    margin-left: 26px;
+    color: rgb(174, 174, 174);
+}
+
+.mastercard-logo {
+    height: 30px;
+}
+
+.card-number {
+    padding: 6px 0px 0px 5px;
+}
+
+.card-number-stars {
+    padding: 8px 0px 0px 20px;
+    letter-spacing: 4px;
+}
+
+.card-date {
+    padding-top: 6px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.balance-tag {
+    color: rgb(174, 174, 174);
+    margin: 20px 0px 0px 30px;
+}
+
+.money-account {
+    color: white;
+    margin: 0px 0px 0px 30px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.money-for-click-frame {
+    background-color: #44ab74;
+    border-radius: 25px;
+    height: 80px;
+    /* width: 920px; */
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.money-for-click {
+    color: white;
+    padding: 22px 0px 0px 30px;
+    font-size: 30px;
+}
+
+.money-for-click-tag {
+    color: rgb(236, 236, 236);
+    margin: 34px 0px 0px 10px;
+}
+
+.ruble-sign:before{
+    content: "₽";
+    margin-right: 5px;
+}
+
+.money-btn {
+    border: 10px solid #c2a019;
+    border-radius: 50%;
+    background-color: #eac52e;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    /* margin-top: 200px; */
+    margin-top: 12em;
+    margin-bottom: 8em;
+    cursor: pointer;
+}
+
+.money-btn:active {
+    background-color: #d3b641;
+}
+
+.money-btn-ruble-sign {
+    margin: 20px 0px 0px 50px;
+    color: #c2a019;
+    /* font-weight: bold; */
+    font-size: 100px;
+}
+
+.switch-tabs-btns {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    /* margin-left: -100px; */
+    /* margin: 0 auto; */
+}
+
+.upgades-tab {
+    /* border: 1px dashed red; */
+    /* padding-left: 215px; */
+}
+
+.passives-tab {
+    /* border: 1px dashed red; */
+    border-left: 1px solid gray;
+    /* padding-left: 35px; */
+    /* padding-left: 10%; */
+}
+.car-shop-tab {
+    /* border: 1px dashed red; */
+    border-left: 1px solid gray;
+    /* padding-left: 35px; */
+    /* padding-left: 10%; */
+}
+
+.tab-btn {
+    margin-top: 20px;
+    /* font-size: 25px; */
+    /* font-size: 1.6rem; */
+    font-size: 150%;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.tab-btn-sign {
+    /* color: rgb(52, 52, 52); */
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tab-btn-sign:hover {
+    color: rgb(162, 162, 162);
+    transition: 0.5s;
+}
+
+.upgrade-list {
+    /* display: none; */
+    margin-top: 60px;
+}
+
+.upgrade-tablet {
+    /* border: 1px solid black; */
+    border-radius: 23px;
+    background-color: #309343;
+    min-height: 80px;
+
+    /* width: 450px; */
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 20px 0px 0px 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.upgrade-tablet:hover {
+    background-color: #48ba5f;
+    transition: 0.5s;
+}
+
+.upgrade-btn {
+    margin: 18px 0px 0px 25px;
+    /* padding: 5px 0 5px 15px; */
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
+    /* background-color: #00450b; */
+    /* width: 100px; */
+    color: white;
+    cursor: pointer;
+    /* font-size: 40px; */
+    font-size: 2.5rem;
+}
+
+.upgrade-price{
+    /* margin: 0px 0px 0px 0px; */
+    padding: 10px 0 0px 20px;
+    background-color: #404040;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.passives-list {
+    /* height: 70%; */
+    display: none;
+    overflow-y: scroll;
+    direction: rtl;
+}
+
+.passives-list::-webkit-scrollbar {
+    width: 0;
+}
+
+.passives-list>div {
+    direction: ltr;
+}
+
+.passive-tab {
+    border-radius: 30px;
+    color: white;
+    font-size: 30px;
+    min-height: 310px;
+    /* width: 660px; */
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px 0px 20px 40px;
+}
+
+.shaurma {
+    background-color: #ad9072;
+}
+
+.passive-name {
+    /* font-size: 60px; */
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.passive-price {
+    margin-top: 20px;
+}
+
+.income {
+    margin-top: 15px;
+}
+
+.buy-passive-btn {
+    margin: 5% 0px 0px 30px;
+    font-size: 30px;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    padding-top: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buy-shaurma-btn {
+    background-color: #8e7357;
+    transition: 0.5s;
+}
+
+.buy-shaurma-btn:hover {
+    background-color: #7d664e;
+    transition: 0.5s;
+}
+
+.batin-garage {
+    background-color: #5d2121;
+}
+
+.buy-garage-btn {
+    background-color: #4a1818;
+    transition: 0.5s;
+}
+
+.buy-garage-btn:hover {
+    background-color: #3e1414;
+    transition: 0.5s;
+}
+
+.car-repair {
+    background-color: #5d6e85;
+    margin-bottom: 250px;
+}
+
+.buy-repair-btn {
+    background-color: #485a70;
+    transition: 0.5s;
+}
+
+.buy-repair-btn:hover {
+    background-color: #3d4e64;
+    transition: 0.5s;
+}
+
+.passive-photo {
+    border: 2px solid rgb(82, 82, 82);
+    border-radius: 20px;
+    margin: 20px 40px 0px 0px;
+    float: right;
+    width: 280px;
+    /* max-width: 50%; */
+}
+
+.car-shop-list {
+    /* height: 33%; */
+    display: none;
+    overflow-y: scroll;
+    direction: rtl;
+}
+
+.car-shop-list::-webkit-scrollbar {
+    width: 0;
+}
+
+.car-shop-list>div {
+    direction: ltr;
+}
+
+.car-tablet {
+    border-radius: 30px;
+    min-height: 310px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.regular {
+    background-color: #9a9a9a;
+}
+
+.regular-btn {
+    background-color: #6f6f6f;
+}
+
+.regular-btn:hover {
+    background-color: #4b4b4b;
+    transition: 0.5s;
+}
+
+.rare {
+    background-color: #4b96e7;
+}
+
+.rare-btn {
+    background-color: #3478c0;
+}
+
+.rare-btn:hover {
+    background-color: #26609e;
+    transition: 0.5s;
+}
+
+.legendary {
+    background-color: #bd3fc8;
+}
+
+.legendary-btn {
+    background-color: #9936a2;
+}
+
+.legendary-btn:hover {
+    background-color: #7c2884;
+    transition: 0.5s;
+}
+
+.super-legendary {
+    background-color: #ffd700;
+}
+
+.super-legendary-btn {
+    background-color: #ddbf14;
+}
+
+.super-legendary-btn:hover {
+    background-color: #a38b00;
+    transition: 0.5s;
+}
+
+.cool-car {
+    margin-bottom: 300px;
+}
+
+.bought {
+    color: rgb(117, 255, 117);
+}
+
+.about-car {
+    margin: 0px 0px 0px 40px;
+    padding-top: 20px;
+    color: white;
+}
+
+.car-name {
+    /* font-size: 70px; */
+    font-size: 400%;
+    font-weight: bold;
+}
+
+.car-price {
+    font-size: 30px;
+}
+
+.buy-car-btn {
+    margin: 80px 0px 0px 30px;
+    font-size: 30px;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    padding-top: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.car-photo {
+    border: 2px solid rgb(82, 82, 82);
+    border-radius: 20px;
+    margin: -20px 30px 0px 0px;
+    float: right;
+    width: 280px;
+}
+
+/* Медиа запросы */
+
+@media (max-width: 1550px) {
+    .passive-name {
+        font-size: 150%;
+    }
+
+    .car-name {
+        font-size: 300%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .passive-photo {
+        max-width: 50%;
+    }
+
+    .car-photo {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 1420px) {
+    .passive-photo {
+        float: none;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .car-photo {
+        float: none;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .passive-tab {
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .car-tablet {
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .buy-passive-btn {
+        /* margin: 5% 0px 0px 30px; */
+        margin: 0 auto;
+        margin-top: 5%;
+        font-size: 30px;
+        width: 150px;
+        height: 40px;
+    }
+
+    .buy-car-btn {
+        margin: 0 auto;
+        margin-top: 5%;
+        font-size: 30px;
+        width: 150px;
+        height: 40px;
+    }
+
+    .about-car {
+        margin: 0px;
+    }
+
+    /* .switch-tabs-btns {
+        font-size: 10px;
+    } */
+
+    .tab-btn {
+        font-size: 120%;
+    }
+}
+
+@media (max-width: 600px) {
+    .car-photo {
+        max-width: 90%;
+    }
+
+    .passive-name {
+        font-size: 120%;
+    }
+
+    .car-name {
+        font-size: 200%;
+    }
+
+    .passive-tab {
+        max-width: 60%;
+        font-size: 20px;
+    }
+
+    .car-tablet {
+        max-width: 60%;
+        font-size: 20px;
+    }
+
+    .car-price {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+}
